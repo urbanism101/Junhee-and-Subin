@@ -31,6 +31,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const daysLeft = calculateDDay(eventDate);
   const dDayElement = document.getElementById("d-day");
   if (dDayElement) {
-    dDayElement.textContent = "D-Day: " + daysLeft + "일 남았습니다.";
+    if (daysLeft === 0) {
+      dDayElement.textContent = "준희와 수빈의 결혼식이 오늘입니다!";
+    } else if (daysLeft > 0) {
+      dDayElement.textContent = "준희와 수빈의 결혼식이 " + daysLeft + "일 남았습니다!";
+    } else {
+      dDayElement.textContent = "준희와 수빈이 " + Math.abs(daysLeft) + "일동안 함께하고 있습니다!";
+    }
   }
 });
