@@ -1,0 +1,74 @@
+/* styles.css */
+
+/* header 스타일 */
+header {
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Pinyon Script', cursive;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* 달력 스타일 예시 */
+#calendar {
+  background-color: #ffe6f0;
+  font-family: 'NanumDaHaengCe', cursive;
+  padding: 10px;
+}
+#calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+#calendar th,
+#calendar td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+#calendar tr th {
+  background-color: #ffc0cb;
+}
+/* 요일별 색상 */
+#calendar tr th:nth-child(1),
+#calendar tr td:nth-child(1) {
+  color: red;
+}
+#calendar tr th:nth-child(7),
+#calendar tr td:nth-child(7) {
+  color: blue;
+}
+/* 10월 18일 강조 */
+#calendar td.current-day {
+  position: relative;
+  font-weight: bold;
+}
+#calendar td.current-day::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+/* 이전/다음 달 날짜 */
+#calendar td.other-month {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* fade-in 효과 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
