@@ -109,8 +109,9 @@
       opacity: 1;
     }
     /* 스크롤 테스트를 위한 추가 높이 */
-    body {
-      min-height: 200vh;
+    .body2 {
+      min-height: 1000vh;
+      background: #a0a0a0;
     }
     img {
       display: block;
@@ -122,11 +123,13 @@
 
   </style>
 </head>
-<body>
+<body class="body2">
   <header>
     <h1>The Wedding of Junhee and Subin</h1>
   </header>
-
+    <p><span style="font-family: 'SCDREAM6'">Junhee Choi-Subin Im:</span></p>
+    <p><span style="font-family: 'SCDREAM6'">Wedding in Oct. 18, 2025</span></p>
+  
     <img src="./images/main_bu.JPG" alt="main_photo" class="fade-in">
   
   <script>
@@ -152,8 +155,10 @@
       });
     });
   </script>
+  </body>
 
-  
+  <body>
+
   <script type="module">
     import { weddingMessage } from './components/main_message.js';
     document.getElementById('message-container').innerHTML = weddingMessage;
