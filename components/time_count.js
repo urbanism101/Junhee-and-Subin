@@ -31,6 +31,10 @@ document.addEventListener("DOMContentLoaded", function() {
   const daysLeft = calculateDDay(eventDate);
   const dDayElement = document.getElementById("d-day");
   if (dDayElement) {
+    
+    dDayElement.style.marginBottom = "20px";
+    dDayElement.style.fontFamily = "SCDREAM5";
+    
     if (daysLeft === 0) {
       dDayElement.textContent = "준희와 수빈의 결혼식이 오늘입니다!";
     } else if (daysLeft > 0) {
