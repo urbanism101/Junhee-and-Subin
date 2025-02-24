@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Junhee and Subin</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap">
+  <link rel="stylesheet" href="styles.css">
   <style>
     /* 로컬 폰트 불러오기 */
   @font-face {
@@ -35,9 +37,6 @@
       url('https://cdn.jsdelivr.net/gh/fonts-archive/NanumDaHaengCe/NanumDaHaengCe.woff') format('woff'),
       url('https://cdn.jsdelivr.net/gh/fonts-archive/NanumDaHaengCe/NanumDaHaengCe.ttf') format('truetype');
   }
-
-  @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
-
   
     body {
       min-height: 300vh;
@@ -107,16 +106,16 @@
 
 /* 각 줄마다 딜레이를 줍니다 */
     .fade-line:nth-child(1) {
-      animation-delay: 0.5s;
+      animation-delay: 3.0s;
     }
     .fade-line:nth-child(2) {
-      animation-delay: 1s;
+      animation-delay: 3.8s;
     }
     .fade-line:nth-child(3) {
-      animation-delay: 1.5s;
+      animation-delay: 4.6s;
     }
     .fade-line:nth-child(4) {
-      animation-delay: 2s;
+      animation-delay: 5.4s;
     }
 
     @keyframes fadeIn {
@@ -211,24 +210,53 @@
           <th>토</th>
         </tr>
         <tr>
-          <td>28</td> <td>29</td> <td>30</td> <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+          <td class="other-month">28</td>
+          <td class="other-month">29</td>
+          <td class="other-month">30</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
         </tr>
         <tr>
-          <td>5</td> <td>6</td> <td>7</td> <td>8</td> <td>9</td> <td>10</td> <td>11</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
         </tr>
         <tr>
-          <td>12</td> <td>13</td> <td>14</td> <td>15</td> <td>16</td> <td>17</td> <td>18</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td class="current-day">18</td>
         </tr>
         <tr>
-          <td>19</td> <td>20</td> <td>21</td> <td>22</td> <td>23</td> <td>24</td> <td>25</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
         </tr>
         <tr>
-          <td>26</td> <td>27</td> <td>28</td> <td>29</td> <td>30</td> <td>31</td> <td>1</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td class="other-month">1</td>
         </tr>
-        <!-- 추가 행을 넣어 실제 달력을 구성 -->
       </table>
     </div>
-  </section>  
+  </section>
   <script src="./components/time_count.js" defer></script>
 
 
