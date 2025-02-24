@@ -36,12 +36,8 @@
       url('https://cdn.jsdelivr.net/gh/fonts-archive/NanumDaHaengCe/NanumDaHaengCe.ttf') format('truetype');
   }
 
-  @font-face {
-    font-family: "PinyonScript";
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
   
     body {
       min-height: 300vh;
@@ -54,7 +50,7 @@
       background: #fff;
       text-align: center;
       padding: 20px;
-      font-family: 'PinyonScript';
+      font-family: 'Pinyon Script', cursive;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     header h1 {
@@ -102,6 +98,34 @@
       z-index: 9999; 
     }
 
+    .fade-line {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+/* 각 줄마다 딜레이를 줍니다 */
+    .fade-line:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+    .fade-line:nth-child(2) {
+      animation-delay: 1s;
+    }
+    .fade-line:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+    .fade-line:nth-child(4) {
+      animation-delay: 2s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    
     .fade-in {
       opacity: 0;
       transition: opacity 1s ease-in-out;
@@ -156,6 +180,7 @@
       });
     });
   </script>
+  
   <div id="message-container"></div>
   <script type="module">
     import { weddingMessage } from './components/main_message.js';
