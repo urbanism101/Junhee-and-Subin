@@ -30,16 +30,16 @@ header h1 {
   border: 1px solid #ddd;
 }
 #calendar tr th {
-  background-color: #ffc0cb;
+  background-color: #E1C1C1;
 }
 /* 요일별 색상 */
 #calendar tr th:nth-child(1),
 #calendar tr td:nth-child(1) {
-  color: red;
+  color: #C02828;
 }
 #calendar tr th:nth-child(7),
 #calendar tr td:nth-child(7) {
-  color: blue;
+  color: #4F90CA;
 }
 /* 10월 18일 강조 */
 #calendar td.current-day {
