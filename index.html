@@ -44,6 +44,7 @@
   }
   
     body {
+      min-height: 300vh;
       margin: 0;
       font-family: 'CustomFont';
       background: #f8f8f8;
@@ -98,7 +99,7 @@
       position: fixed;
       bottom: 0;
       width: 100%;
-    }
+      z-index: 9999; 
 
     .fade-in {
       opacity: 0;
@@ -108,11 +109,13 @@
     .fade-in.visible {
       opacity: 1;
     }
+      
     /* 스크롤 테스트를 위한 추가 높이 */
     .body2 {
       min-height: 300vh;
       background: #a0a0a0;
     }
+      
     img {
       display: block;
       max-width: 600px;
@@ -123,7 +126,7 @@
 
   </style>
 </head>
-<body class="body2">
+<body>
   <header>
     <h1>The Wedding of Junhee and Subin</h1>
   </header> 
@@ -152,10 +155,7 @@
       });
     });
   </script>
-  </body>
-
-  <body>
-
+  <div id="message-container"></div>
   <script type="module">
     import { weddingMessage } from './components/main_message.js';
     document.getElementById('message-container').innerHTML = weddingMessage;
