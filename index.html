@@ -108,12 +108,10 @@
     <h1>The Wedding of Junhee and Subin</h1>
   </header>
   
-  <section>
-    <p><span style="font-family: 'NanumDaHaengCe'">서로가 그동안 다른 길을 걷다</span></p>
-    <p><span style="font-family: 'NanumDaHaengCe'">같은 방향으로 걸음을 딛게 되었습니다</span></p>
-    <p><span style="font-family: 'NanumDaHaengCe'">귀한 시간 내주셔서 저희의 앞날을</span></p>
-    <p><span style="font-family: 'NanumDaHaengCe'">응원해주시면 감사하겠습니다</span></p>
-  </section>
+  <script type="module">
+    import { weddingMessage } from './components/main_message.js';
+    document.getElementById('message-container').innerHTML = weddingMessage;
+  </script>
   <section class="section2">
     <p>&nbsp;&nbsp;&nbsp;</p>
     <p><span style="font-family: 'SCDREAM6'">  일시:</span> <span style="font-family: 'SCDREAM5'">2025년 10월 18일</span></p>
